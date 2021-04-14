@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <title>Tim's Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
@@ -77,21 +79,23 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <div class="w3-content" style="max-width:600px">
       <h4 class="w3-center"><b>Stuur mij een bericht!</b></h4>
       <p>Wil jij graag meer over mij te weten komen? Vul dan het onderstaande formulier in.</p>
-      <form action="verstuur.html" target="_blank">
-        <div class="w3-section">
-          <label>Naam & Achternaam</label>
-          <input class="w3-input w3-border" type="text" name="Name" required>
-        </div>
-        <div class="w3-section">
-          <label>E-mail</label>
-          <input class="w3-input w3-border" type="text" name="Email" required>
-        </div>
-        <div class="w3-section">
-          <label>Vraag</label>
-          <input class="w3-input w3-border" type="text" name="Message" required>
-        </div>
-        <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Verstuur vraag</button>
-      </form>
+     <form
+  action="https://formspree.io/f/xqkwkroj"
+  method="POST"
+>
+  <label>
+    Uw E-mailadres:
+    <input class="w3-input w3-border" type="email" name="_replyto">
+  </label>
+  <label>
+    Vul hier uw vraag in:
+    <textarea class="w3-input w3-border" name="message"></textarea>
+  </label>
+
+  <!-- your other form fields go here -->
+
+  <button class="w3-input w3-border" type="submit">Verstuur vraag</button>
+</form>
     </div>
   </div>
 
